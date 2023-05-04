@@ -1,2 +1,4 @@
 # web_front_end
-A repo which consists of all my front end web pages from basic to advance level projects.
+This is a repository which consists of Front end website projects.
+It will include projects from basic level to advance level.
+
