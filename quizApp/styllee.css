@@ -39,5 +39,7 @@ body{
     background-color: bisque;
     color: brown;
     font-weight: bold;
+    font-family: sans-serif;
     border: 2px solid;
+    border-radius: 44px;
 }
