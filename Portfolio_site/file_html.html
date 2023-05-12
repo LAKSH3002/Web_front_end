@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio.com</title>
     <link rel="stylesheet" href="Styling.css">
+    <script src="https://kit.fontawesome.com/209f621028.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -26,7 +27,7 @@
 <div class="header-text">
     <p>Application Developer / Data Analyst</p>
     <h1>Hello, I'm <span>Laksh Doshi</span> <br>From India</h1>
-    <h1>IT Engineering <br> Student</h1>
+    <h1>Information Technology Engineering <br> Student</h1>
 </div> 
 
 <!--------about me------->
@@ -44,21 +45,102 @@
             is my passion. I love to play cricket , football and table tennis,
             also i love to get involve in activities related to marketing.
             Hello , I am Laksh Doshi , 2nd Year IT Engineering Student
-            I am Currently learning Flutter App developement and aim to 
-            become an application developer. I love to dance as well, Dancing
-            is my passion. I love to play cricket , football and table tennis,
-            also i love to get involve in activities related to marketing.
         </p>
 
         <div class="tab-titles">
-            <p class="tab-links active-link">Skills</p>
-            <p class="tab-links">Experience</p>
-            <p class="tab-links">Education</p>
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links"onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Designing Web/App and user Interfaces</li>
+                <li><span>Web developement</span><br>Front end web developer</li>
+                <li><span>Flutter App</span><br>Building Flutter app</li>
+            </ul>
+        </div>
+
+        <div class="tab-contents" id="Experience">
+            <ul>
+                <li><span>IETE-TSEC</span><br>Marketing Executive</li>
+                <li><span>Tsec CodeCell</span><br>Junior Committee Member</li>
+                <li><span>Manibhadra Automobiles</span><br>Sales Executive</li>
+            </ul>
+        </div>
+
+        <div class="tab-contents" id="Education">
+            <ul>
+                <li><span>2012-2019</span><br>St Peter's School</li>
+                <li><span>2019-2021</span><br>Jai Hind College</li>
+                <li><span>2021-2025</span><br>Thadomal Shahani Engineering College</li>
+            </ul>
         </div>
     </div>
 </div>
 </div>
 </div>
 
+<!-------------services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <!---adding icons to all is left-->
+                <h2>Digital Marketing</h2>
+                <p>Marketing through Social media means , affiliate marketing,
+                    influnecer marketing and content and blog marketing.</p>
+                    <a href="#">Ideas Link</a>
+            </div>
+            <div>
+                <h2>App Development</h2>
+                <p>Developing front end of apps using java and dart programming 
+                    language and making android and flutter apps</p>
+                    <a href="#">Projects</a>
+            </div>
+            <div>
+                <h2>Competitive Coding</h2>
+                <p>Competitive programming using c, c++ and java programming
+                    languages and improving coding skills.</p>
+                    <a href="#">Programmes docs</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------Portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                <h3>Social Media Marekting</h3>
+                <p>Created stratergies to boost up Social
+                    media handles and increase visisbilty.
+                </p></div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                <h3>App developement</h3>
+                <p>Created stratergies to boost up Social
+                    media handles and increase visisbilty.
+                </p></div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                <h3>Competitive coding</h3>
+                <p>Created stratergies to boost up Social
+                    media handles and increase visisbilty.
+                </p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="portfolio.js"></script>
 </body>
 </html>
