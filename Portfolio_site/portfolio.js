@@ -14,3 +14,21 @@ function opentab(tabname)
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwvyc-TiWnyctL_9mx0-6KvYU-RM9vGrbOkdkTmcttI-kgqyzaj1KMaFs80vW8WZEbJtQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById('Msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Message submitted successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
