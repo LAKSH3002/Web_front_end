@@ -172,7 +172,7 @@ transition: 0.5s;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     /* What this line does*/
     grid-gap: 25px;
-    margin: 50px 25px; 
+    margin: 30px 25px; 
 }
 .services-list div{
     background-color: #262626;
@@ -222,6 +222,7 @@ transform: translateY(-40px);
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    /* Transition is used to transform any element in a html doc*/
 }
 .work:hover img{
     transform: scale(1.6);
@@ -229,26 +230,30 @@ transform: translateY(-40px);
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.4),#ff004f);
+    /*if given non zero the heading and paragraph is shown on the images*/
+    background: linear-gradient(rgba(0,0,0,0.4),#a600ff);
+    /*Linear Gradient - A combination of two colors in a linear way */
     border-radius: 10px;
     position: absolute;
-    left: 0;
+    left: 60;
     bottom: 0;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding:0 40px;
+    padding:0 20px;
     text-align: center;
     font-size: 14px;
-    transition: height 0.5s;
+    transition: height 0.6s;
+    /*Transition - is to change the display once we hover over the image.*/
 }
 .layer h3{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: burlywood;
+    text-decoration: underline;
 }
 .layer a{
     margin-top: 20px;
@@ -269,6 +274,7 @@ transform: translateY(-40px);
     display: block;
     margin:50px auto;
     width: fit-content;
+    /*fit content - */
     border: 1px solid red;
     padding: 14px 50px;
     border-radius: 6px;
@@ -279,6 +285,7 @@ transform: translateY(-40px);
 .btn:hover{
     background-color: #ff004f;
 }
+
 /*----------CONTACT---------*/
 .contact-left{
     flex-basis: 30%;
@@ -296,7 +303,7 @@ transform: translateY(-40px);
     font-size: 25px;
 }
 .social-icons{
-    margin-top: 10px;
+    margin-top: 15  px;
 }
 .social-icons a{
     text-decoration: none;
@@ -304,18 +311,34 @@ transform: translateY(-40px);
     margin-right: 15px;
     color:#ababab;
     display:inline-block;
-    transition: transform(0.5s);
+    transition: transform(0.8s);
     margin-top: 20px;
 }
 .social-icons a:hover{
     color:#ff004f;
     transform: translateY(-5px);
+
+    /*in order to create an uplift and hover effect
+    firstly we need to give a transition to the element
+    transition: transform(0.8s)
+    then hover it 
+    then
+    transform: translateY(-5px);
+    */
+
 }
 .btn.btn2{
     display: inline-block;
     background: red;
 }
-
+form .btn.btn2{
+    transition: transform(0.8s);
+}
+form .btn.btn2:hover
+{
+    transform: translateY(-10px);
+    color: yellow;
+}
 .contact-right form{
 width: 100%;
 }
@@ -336,6 +359,12 @@ form .btn2{
     margin-top:12px;
     margin-left: 18px;
     cursor:pointer;
+    transition: transform(0.8s);
+}
+form .btn2:hover
+{
+    transform: translateY(-10px);
+    color:yellow;
 }
 .copyright{
     text-align: center;
