@@ -2,7 +2,7 @@ const endDate = "6 June 2023 6:00 PM";
 
 document.getElementById("endDate").innerText = endDate;
 const inputs = document.querySelectorAll("input")
-// query selector all?
+// query selector all - returns all the values that matches the css selector.
 
 function clock()
 {
@@ -35,5 +35,5 @@ setInterval(
     },
     1000
 )
-// setinterval??
-// query selector all??
+// setinterval - calls the function after every specific interval
+// in this case the clock function will be called after every 1 second.
