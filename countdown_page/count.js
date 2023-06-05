@@ -1,7 +1,8 @@
-const endDate = "22 May 2023 04:13 PM";
+const endDate = "6 June 2023 6 PM";
 
 document.getElementById("endDate").innerText = endDate;
 const inputs = document.querySelectorAll("input")
+// query selector all?
 
 function clock()
 {
@@ -34,3 +35,5 @@ setInterval(
     },
     1000
 )
+// setinterval??
+// query selector all??
