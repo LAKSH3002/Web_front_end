@@ -391,7 +391,7 @@ nav .fa-solid{
 @media only screen and (max-width:950px)
 {
    #container{
-    padding-left: 40px;
+    padding-left:40px;
    }
 } 
 /*-----------CSS for Medium Screen-----------*/
@@ -400,7 +400,6 @@ nav .fa-solid{
     .header-text h1{
         font-size: 45px;
     }
-    
     nav .fas{
         display: block;
         font-size: 25px;
@@ -409,19 +408,16 @@ nav .fa-solid{
         background:#ff004f;
         position: fixed;
         top:0;
-        right:0px;
-        width:200px;
+        left:-200px;
+        width:150px;
         height:100vh;
         padding-top: 50px;
         z-index:2;
-        transition: right 0.5s;
+        transition: left 0.5s;
     }
     nav ul li{
         display: block;
-        margin: 25px;
-    }
-    nav .fas.fa-bars{
-        margin-left: 520px;
+        margin: 25px 35px;
     }
     nav ul .fas{
         position:absolute;
@@ -461,3 +457,30 @@ nav .fa-solid{
     }
 }
 /*-----------CSS for Small Screen-----------*/
+@media only screen and (max-width:430px)
+{
+    .header-text h1{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom:30px ;
+    }
+    .about-col-2 p{
+        font-size: 14px;
+    }
+    .tab-contents{
+        font-size: 20px;
+    }
+    .services-list h2{
+        font-size: 20px;
+    }
+    form input, form textarea{
+        width: 175%;
+    }
+    .copyright p{
+        font-size: 15px;
+    }
+}
