@@ -15,7 +15,7 @@ body{
     padding: 30px;
     padding-left: 350px;
     justify-content: space-between;
-    background-color: #ff004f;
+    background-color: black;
     font-size: 20px;
     font-weight: 100;
     position: relative;
@@ -60,6 +60,10 @@ nav ul li a::after{
 
     transition: 0.5s;
     /* change a certain factor of the element */
+}
+
+nav .fas{
+    display: none;
 }
 .header-text{
 margin-top: 5%;
@@ -331,10 +335,10 @@ transform: translateY(-40px);
     display: inline-block;
     background: red;
 }
-form .btn.btn2{
+.contact-left a{
     transition: transform(0.8s);
 }
-form .btn.btn2:hover
+.contact-left a:hover
 {
     transform: translateY(-10px);
     color: yellow;
@@ -383,27 +387,77 @@ nav .fa-solid{
     display: block;
     margin-left: 20px;
 }
-/*-----------CSS for Small Screen-----------*/
-@media only screen and(max-width:600px)
+
+@media only screen and (max-width:950px)
 {
- .header-text{
-    margin-top: 100%;
-    font-size: 16px;
- }
- .header-text h1{
-    font-size: 30px;
- }
- nav .fa-solid{
-    display: block;
-    font-size: 25px;
- }
- nav ul{
-    background: #ff004f;
-    position: fixed;
-    top:0;
-    right:0;
-    width:200px;
-    height: 100vh;
-    padding-top:50px;
- }
+   #container{
+    padding-left: 40px;
+   }
+} 
+/*-----------CSS for Medium Screen-----------*/
+@media only screen and (max-width: 630px)
+{
+    .header-text h1{
+        font-size: 45px;
+    }
+    
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background:#ff004f;
+        position: fixed;
+        top:0;
+        right:0px;
+        width:200px;
+        height:100vh;
+        padding-top: 50px;
+        z-index:2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav .fas.fa-bars{
+        margin-left: 520px;
+    }
+    nav ul .fas{
+        position:absolute;
+        top:25px;
+        left:35px;
+        cursor: pointer;
+    }
+    .about-col-1 img{
+        width:100%;
+        border-radius: 35px;
+        height: 100%;
+        background-color: grey;
+        flex-basis: 100%;
+    }
+    .work img{
+        width: 80%;
+    }
+    .contact-left{
+        flex-basis: 10%;
+        margin-right: 10px;
+    }
+    .contact-right{
+        flex-basis: 50%;
+    }
+    .contact-left .btn.btn2{
+        font-size: 10px;
+    }
+    .contact-left p{
+        font-size: 10px;
+        display: flex;
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .contact-right .btn.btn2{
+        font-size: 10px;
+    }
 }
+/*-----------CSS for Small Screen-----------*/

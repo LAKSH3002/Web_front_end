@@ -15,6 +15,17 @@ function opentab(tabname)
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+var side = document.getElementById('sidemenu');
+
+function openmenu()
+{
+  side.style.right = "0px";
+}
+function closemenu()
+{
+  side.style.right = '-200px';
+}
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwvyc-TiWnyctL_9mx0-6KvYU-RM9vGrbOkdkTmcttI-kgqyzaj1KMaFs80vW8WZEbJtQ/exec'
   const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById('Msg')
