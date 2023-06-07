@@ -30,6 +30,14 @@ const qn = [
         'c': "Jason Object Notation",
         'd': "Helicopters Terminals Motorboats Lamborginis",
         'correct': "b",
+    },
+    {
+        'que': "Who is the prime Minister Of India",
+        'a': "Narendra Modi",
+        'b': "Ramnath Kovind",
+        'c': "Arun Jetli",
+        'd': "Manmohan SIngh",
+        'correct': "a",
     }
 ]
 
@@ -54,10 +62,10 @@ const load = ()=>
     options[3].nextElementSibling.innerText = data.d;
 }
 
-const submitquiz = ()=>{
+const nextQuestion = ()=>{
     const data = qn[index];
     const ans = getAnswer()
-    if(ans === data.correct )
+    if(ans === data.correct)
     {
         right++;
     }
@@ -69,6 +77,7 @@ const submitquiz = ()=>{
     return;
 }
 
+// doubt here
 const getAnswer = ()=>{
     let answer;
     options.forEach(
@@ -81,7 +90,7 @@ const getAnswer = ()=>{
     )
     return answer;
 }
-
+// doubt here
 const reset = ()=>
 {
     options.forEach(
