@@ -17,10 +17,9 @@ body{
     /* hidden , scroll and auto */
     /* auto- adds scrollbar only when necessary */
 
-    /* set transition up
+    
     -webkit-transition: max-height 0.7s;
-    -moz-transition: max-height 0.7s; */
-    /* meaning of the above two*/
+    -moz-transition: max-height 0.7s; 
     transition: max-height 0.7s;
 }
 
