@@ -17,7 +17,7 @@ var car = function(maxspeed,driver){
 var mycar = new car(70,'Laksh');
 var mycar2 = new car(7,'Lak');
 var mycar3 = new car(0,"ksh");
-var mycar4 = new car(07,'sh');
+var mycar4 = new car(7,'sh');
 
 mycar.drive(30,5);
 mycar3.logdriver();
