@@ -37,3 +37,17 @@ input[type=text]{
     background-color:gray;
     color: white;
 }
+.container{
+    height: 100px;
+    background-color: rgb(47, 23, 68);
+}
+.container p{
+    color: gray;
+margin-left: 20px;
+padding-top: 20px;
+}
+.container h2{
+    margin-left: 20px;
+    color: white;
+    font-size:30px;
+}
