@@ -50,4 +50,154 @@ padding-top: 20px;
     margin-left: 20px;
     color: white;
     font-size:30px;
+    font-weight: bold;
+}
+h3{
+    color: white;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.preparation{
+margin-top: 10px;
+display: flex;
+height: 300px;
+padding-left: 25px;
+}
+.container-1{
+    margin-top:30px;
+    background-color:  rgb(47, 23, 68);
+    height: 260px;
+    width:600px;
+    border-radius: 8px;
+}
+.container-1 p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    color:rgb(130, 116, 116);
+}
+.container-2{
+    margin-left: 20px;
+    background-color: rgb(47, 23, 68);
+    margin-top: 30px;
+    height: 260px;
+    width:600px;
+    border-radius: 8px;
+}
+.container-2 p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    color:rgb(130, 116, 116);
+}
+.container-1 h2{
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.container-2 h2
+{
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#one{
+    color:white;
+    margin-top: 40px;
+    font-size: 15px;
+}
+#two{
+    color:white;
+    margin-top:40px;
+    font-size: 15px;
+}
+#b1{
+    margin-top: 20px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: green;
+    width:230px;
+    border-radius: 5px;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+}
+#b2{
+    margin-top: 20px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: white;
+    width:230px;
+    border-radius: 5px;
+    color:black;
+    font-size: 20px;
+    cursor: pointer;
+}
+.certify{
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+}
+.certify p{
+    color: white;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.certify button{
+    margin-top: 55px;
+    margin-left: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+.container-3{
+    background-color: rgb(49, 59, 61);
+    width:390px;
+    height:160px;
+    margin:6px;
+    margin-left: 25px;
+    border-radius:10px;
+    cursor: pointer;
+}
+.container-4{
+    background-color: rgb(49, 59, 61);
+    width:390px;
+    height:160px;
+    margin:6px;
+    border-radius:10px;
+    cursor: pointer;
+}
+.container-5{
+    background-color: rgb(49, 59, 61);
+    width:390px;
+    height:160px;
+    margin:6px;
+    border-radius:10px;
+    cursor: pointer;
+}
+.contents{
+    background-color: rgb(47, 23, 68);
+    margin: 20px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    /* What this line does*/
+    border-radius: 5px;
+}
+.contents p{
+    color:white;
+    font-size: 22px;
+    margin-left: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.contents p:hover{
+    text-decoration: underline;
 }
