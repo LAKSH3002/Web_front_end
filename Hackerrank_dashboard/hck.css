@@ -24,6 +24,10 @@ nav li {
     width: 1px;
     height: 22px;
 }
+#prepare{
+    text-decoration: underline;
+    color: wheat;
+}
 nav li:hover {
   cursor: pointer;
   text-decoration: underline greenyellow;
