@@ -13,7 +13,7 @@ nav {
 }
 nav li {
   padding-right: 30px;
-  margin-left: 4px;
+  margin-left: 4spx;
   font-size: 19px;
   cursor: pointer;
   flex-wrap: wrap;
@@ -21,11 +21,6 @@ nav li {
 }
 nav li a{
   color: white;
-}
-.box {
-  background-color: greenyellow;
-  width: 1px;
-  height: 22px;
 }
 nav li:hover {
   cursor: pointer;
@@ -104,44 +99,28 @@ input[type="text"] {
 }
 
 /*-----Grids and box Decoration-------*/
-#box-1{
+#box{
   color: white;
   background-color: rgb(47, 23, 68);
-  height: 170px;
-  width: 320px;
-  margin-top: 20px;
-  margin-left: 40px;
+  height: 210px;
+  width: 360px;
+  margin-top: 40px;
+  margin-left: 20px;
   border-radius: 6px;
 }
-#box-1 button{
+#box button{
   margin-top: 80px;
-  margin-left: 25px;
+  margin-left: 20px;
   font-size: 20px;
+  font-family: sans-serif;
+  height: 35px;
 }
-#box-2{
-  color: white;
-  background-color: rgb(47, 23, 68);
-  height: 170px;
-  width: 320px;
-  margin-top: 20px;
-  margin-left: 40px;
+#box h2{
+  padding-top: 25px;
+  padding-left: 25px;
+  font-size: 30px;
 }
-#box-2 button{
-  margin-top: 80px;
-  margin-left: 25px;
-  font-size: 20px;
+.gridsss{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-#box-3{
-  color: white;
-  background-color: rgb(47, 23, 68);
-  height: 170px;
-  width: 320px;
-  margin-top: 20px;
-  margin-left: 40px;
-}
-#box-3 button{
-  margin-top: 80px;
-  margin-left: 25px;
-  font-size: 20px;
-}
-
