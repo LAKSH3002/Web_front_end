@@ -19,7 +19,7 @@ nav li {
   flex-wrap: wrap;
   list-style: none;
 }
-nav li a{
+nav li a {
   color: white;
 }
 .box {
@@ -44,7 +44,7 @@ input[type="text"] {
   background-color: gray;
   color: white;
 }
-#certify{
-    text-decoration: underline;
-    color:wheat;
+#compete{
+  text-decoration: underline;
+  color: wheat;
 }
