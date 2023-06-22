@@ -48,3 +48,50 @@ input[type="text"] {
     text-decoration: underline;
     color:wheat;
 }
+.container {
+  height: 100px;
+  background-color: rgb(47, 23, 68);
+}
+.container p {
+  color: gray;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.container h2 {
+  margin-left: 20px;
+  color: white;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.container-lightblue{
+  color: whitesmoke;
+  margin-top: 0;
+  display: flex;
+  background-color: rgb(126, 21, 217);
+  height: 200px;
+}
+.lb-1{
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.lb-2{
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.lb-3{
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.lb-1 p{
+  margin-top: 15px;
+  font-size: 20px;
+}
+.lb-2 p{
+  margin-top: 15px;
+  font-size: 20px;
+}
+.lb-3 p{
+  margin-top: 15px;
+  font-size: 20px;
+}
