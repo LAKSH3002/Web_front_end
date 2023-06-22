@@ -63,6 +63,7 @@ input[type="text"] {
   margin-top: 10px;
   font-size: 30px;
   font-weight: bold;
+  font-family: sans-serif;
 }
 .container-lightblue{
   color: whitesmoke;
@@ -94,4 +95,20 @@ input[type="text"] {
 .lb-3 p{
   margin-top: 15px;
   font-size: 20px;
+}
+#h3{
+  margin-top: 60px;
+  color: white;
+  margin-left: 40px;
+  font-family: sans-serif;
+}
+
+/*-----Grids and box Decoration-------*/
+#box-1{
+  color: white;
+  background-color: rgb(47, 23, 68);
+  height: 150px;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
