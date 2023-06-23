@@ -101,10 +101,30 @@ aside{
   height: 40px;
   margin-top: 18px;
 }
+button:hover{
+  transform: translateY(-3px);
+}
 #bi{
   color: white;
   background-color: green;
 }
 #h3{
   margin-top: 40px;
+}
+footer {
+  background-color: rgb(35, 35, 33);
+  height: 45px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 1260px;
+}
+#start {
+  margin-left: 300px;
+}
+footer p {
+  color: lightblue;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }
