@@ -77,7 +77,7 @@ main{
 }
 aside{
   color: white;
-  margin-top: 140px;
+  margin-top: 120px;
   margin-left: 20px;
 }
 .box{
@@ -146,4 +146,19 @@ h5{
 h5:hover{
   text-decoration: underline;
   cursor: pointer;
+}
+span{
+  color: pink;
+}
+#sp1:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+h4{
+  font-size: 20px;
+}
+input[type=checkbox]
+{
+  margin-top: 25px;
+  color: lightblue;
 }
