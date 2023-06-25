@@ -5,3 +5,8 @@
 body{
     background-color: azure;
 }
+input[type="text"]
+{
+    margin-left: 200px;
+    margin-top: 50px;
+}
