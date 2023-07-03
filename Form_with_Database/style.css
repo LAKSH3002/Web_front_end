@@ -47,7 +47,9 @@ input,
 textarea,
 label {
     display: block;
+    /*The block brings all boxes in one line*/
     margin: 0 auto;
+    /*this line brings the contents in the center */
     width: 100%;
     color: #828282;
 }
