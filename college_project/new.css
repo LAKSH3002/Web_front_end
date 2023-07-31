@@ -49,6 +49,12 @@ h1{
 #row1 img{
     height: 150px;
 }
+#row1 li{
+    list-style: none;
+}
+#row2 li{
+    list-style: none;
+}
 #row2 img{
     height: 150px;
 }
