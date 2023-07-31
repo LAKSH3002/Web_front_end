@@ -10,6 +10,7 @@ nav {
   display: flex;
   background-color: rgb(35, 35, 33);
   padding: 25px;
+  flex-direction: column;
 }
 nav li {
   padding-right: 30px;
