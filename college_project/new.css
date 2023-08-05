@@ -191,7 +191,7 @@ form .btn2{
     margin-left: 18px;
     cursor:pointer;
     transition: transform(0.8s);
-}
+} 
 form .btn2:hover
 {
     transform: translateY(-10px);
