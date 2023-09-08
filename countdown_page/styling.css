@@ -7,12 +7,7 @@
 /*---Imported Text API---*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-.main{
-    width: 100%;
-    height: 100vh;
-    background: url('images/brahmastra-fee.webp') ;
-    background-size: cover; /*Resizes the background image to cover the entire container, even if it has to stretch the image or cut one of its edges*/
-}
+
 .overlay{
     width: 100%;
     height: 100%;

@@ -1,4 +1,4 @@
-const endDate = "6 June 2023 6:00 PM";
+const endDate = "5 September 2023 6:00 PM";
 
 document.getElementById("endDate").innerText = endDate;
 const inputs = document.querySelectorAll("input")
@@ -35,5 +35,21 @@ setInterval(
     },
     1000
 )
+
+var color = document.getElementsByClassName("Overlay");
+var colours = ["red", "blue", "green", "pink"];
+var counter = 0;
+
+function changecolour()
+{
+
+    if(counter ==  colours.length){
+        counter = 0;
+    }
+    color.style.background = colours[counter];
+    counter++;
+}
+
+var mytimer = setInterval(changecolour,3000);
 // setinterval - calls the function after every specific interval
 // in this case the clock function will be called after every 1 second.
