@@ -3,7 +3,7 @@ body{
 }
 
 #content{
-    width: 480px;
+    width: 580px;
     background: #fff;
     padding: 20px;
     font-family: calibri;
@@ -24,7 +24,7 @@ body{
 }
 
 #content{
-    max-height: 1000px;
+    max-height: 200px;
 
     /* set transition up*/
     -webkit-transition: max-height 0.7s;

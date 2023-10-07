@@ -1,4 +1,4 @@
-const endDate = "5 September 2023 6:00 PM";
+const endDate = "8 October 2023 6:00 PM";
 
 document.getElementById("endDate").innerText = endDate;
 const inputs = document.querySelectorAll("input")
@@ -25,10 +25,8 @@ function clock()
     // for seconds counting
     inputs[3].value = (Math.floor(diff) %60 );
 }
-
 // initial call
 clock()
-
 setInterval(
     () => {
     clock()
@@ -36,7 +34,7 @@ setInterval(
     1000
 )
 
-var color = document.getElementsByClassName("Overlay");
+var color = document.getElementsByClassName("main");
 var colours = ["red", "blue", "green", "pink"];
 var counter = 0;
 
@@ -51,5 +49,10 @@ function changecolour()
 }
 
 var mytimer = setInterval(changecolour,3000);
+
+// problems in this project
+// Background color not getting changed regularly
+// Background image to be updated. 
+
 // setinterval - calls the function after every specific interval
 // in this case the clock function will be called after every 1 second.
