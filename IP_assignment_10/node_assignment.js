@@ -28,5 +28,15 @@ fs.unlink('hero.txt',(err)=>{
 })
 
 // write to a file
-// Append data to the file
+// const newData = 'This is new data.';
+//     fs.writeFile('example.txt', newData, (err) => {
+//       if (err) throw err;
+//       console.log('Data written to the file.');
+// });
 
+// e. Append data to the file
+// const appendedData = '\nThis data is appended.';
+// fs.appendFile('new_example.txt', appendedData, (err) => {
+//   if (err) throw err;
+//   console.log('Data appended to the file.');
+// });
