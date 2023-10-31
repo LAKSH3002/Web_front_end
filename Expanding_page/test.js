@@ -9,7 +9,8 @@ b.onclick = function()
         c.className = "";
         b.innerHTML = "Show more";
     }
-    else{
+    else
+    {
         // expand the box
         c.className = "open";
         b.innerHTML = "Show less";
@@ -17,6 +18,7 @@ b.onclick = function()
 
 };
 
+// getElementbyId, innerHtml, .className
 // The box is not getting expanded, the text of the reference is only getting changed.
 
 // we use it to make sure that we dont find any js untill the window is totally loaded

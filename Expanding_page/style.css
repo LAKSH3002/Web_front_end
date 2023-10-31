@@ -2,7 +2,8 @@ body{
     background: gray;
 }
 
-#content{
+#content
+{
     width: 580px;
     background: #fff;
     padding: 20px;
@@ -24,7 +25,7 @@ body{
 }
 
 #content{
-    max-height: 200px;
+    max-height: 50px;
 
     /* set transition up*/
     -webkit-transition: max-height 0.7s;
