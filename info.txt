@@ -1,0 +1,10 @@
+Done with
+
+1 - Html Page
+2 - stying the Html Page
+3 - using Bootstrap framework
+4a - Conditional statements, loops and functions.
+4b - Inheritance, Iterators and generators
+5a - Arrow functions
+
+Left With Everything else
