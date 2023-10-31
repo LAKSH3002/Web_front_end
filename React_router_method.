@@ -1,0 +1,80 @@
+App.js
+
+import './App.css';
+import Navbar from './components/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import Home from "./Pages/Home";
+import { AuthContextProvider } from './context/AuthContext';
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
+import Account from './Pages/Account';
+import ProtectedRoute from './components/ProtectedRoute';
+
+// Install React Router DOM
+// import BrowserRouter , route, routes.
+function App() 
+{
+  return (
+    <>
+    <AuthContextProvider>
+    <Navbar/>
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/login' element={<Login/>}></Route>
+      <Route path='/signup' element={<Signup/>}></Route>
+      <Route path='/Account' element={<ProtectedRoute><Account/></ProtectedRoute>}></Route>
+      </Routes>
+    </AuthContextProvider>
+    </>
+  );
+}
+
+export default App;
+
+Navbar.js
+
+import React from 'react'  
+// import link from dom.
+import { Link ,useNavigate} from 'react-router-dom';
+import { UserAuth } from '../context/AuthContext';
+
+const Navbar = () => {
+  const {user, logOut} = UserAuth();
+
+  return (
+    <div className='flex items-center justify-between p-4 z-[100] w-full absolute cursor-pointer'>
+      <Link to='/'>
+      <h1 className='text-green-600 text-6xl font-bold'>FLUXV1</h1>
+      </Link>
+      {user?.email?(
+        <div>
+        <button className='bg-green-600 text-white px-6 py-1.5 rounded cursor-pointer text-2xl'>LogOut</button>
+        
+      </div>
+      ):(
+        <div>
+        <Link to='/Login'>
+        <button className='text-white px-4 text-2xl'>Sign In</button>
+        </Link>
+        <Link to='/signup'>
+        <button className='bg-green-600 text-white px-6 py-1.5 rounded cursor-pointer text-2xl'>Sign Up</button>
+        </Link>
+        
+      </div>
+      )}
+      
+    </div>
+  )
+}
+
+export default Navbar
+
+{/* <div>
+        <Link to='/Login'>
+        <button className='text-white px-4 text-2xl'>Sign In</button>
+        </Link>
+        <Link to='/signup'>
+        <button className='bg-green-600 text-white px-6 py-1.5 rounded cursor-pointer text-2xl'>Sign Up</button>
+        </Link>
+        
+      </div> */}
