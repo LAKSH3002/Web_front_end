@@ -1,0 +1,77 @@
+Git commands
+
+1) ls : To display all the files present in the directory
+
+2) pwd - present working directory
+
+3) git config --global user.name
+
+4) git config --global user.email
+
+5) To start with git do the following thing
+
+- create a folder on desktop, documents or wherever you want on system.
+- Go to the empty folder and then right click and open git bash
+- git bash opens
+- type code . and visual studio code opens
+- now do ls -lart
+- The number of files in that folder will be shown
+- Now do git init: It will initialize an empty repository on the given directory.
+- Then check git status.
+
+Therefore commands in use
+- code .
+- git init
+- ls
+- git status
+
+Create a file in vs code
+git add filename
+git status
+git commit
+
+6) git commit: for initial commit on the editor and repository.
+
+- A new page opens
+- Enter alphabet i
+- Then commit message
+- Then esc key,colon, w and q
+- Then again check git status
+
+7) touch filename - to create a new empty file in the directory.
+
+8) git add -A: to add all the created files in staging area.
+
+9) git commit -m "Message" to commit all the new files generated.
+
+10) git checkout filename: This command will give back the the content before the previous commit.
+
+11) git commit -f: This will match the commits with the previous commits of all the files.
+
+12) git log: This will show all the commits made during making the project.
+
+13) git log -p -any_number: This will show only a certain amount of speciific commits made while making the projects.
+
+14) git diff - Shows the exact changes made in file. Before and after part.
+
+- After creating and editing files first stage the file using git add -A and then commit with git commit -m "Message" And then git status.
+
+Without staging How can we Commit?
+
+- git commit -a -m "Message"
+
+15) git rm --cached: File is removed only from staging area
+
+16) git rm : File is removed from both staging area as well as folder.
+
+17) git status -s
+
+18) git ignore command: DOUBT 
+
+19) git branch branchname: A branch is made to make changes on your own system and not on the master branch. This is said one of the best features of git.
+
+20) git merge branchname: This feature merges the features you have added to the master branch. Thus making changes on all the systems which are in collaboration.
+
+NOW COMES THE GITHUB PART
+
+1) git push origin master _ No access to private repo.
